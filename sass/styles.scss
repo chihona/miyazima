@@ -1,0 +1,51 @@
+.first-photo{
+    background-image: url(../photo/main1.jpg);
+    height: 100vh;
+    position: relative;
+    p{
+        z-index: 10;
+        color: #ffffff;
+        font-size: 80px;
+        position: absolute;
+        height: 80px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.second-photo{
+    background-image: url(../photo/main2.jpg);
+    height: 100vh;
+    position: relative;
+    p{
+        z-index: 10;
+        color: #ffffff;
+        font-size: 80px;
+        position: absolute;
+        height: 80px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.title-photo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        height: 100vh;
+        &:nth-of-type(2){
+            height: 200px;
+        }
+    }
+}
