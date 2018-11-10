@@ -49,3 +49,202 @@
         }
     }
 }
+
+header{
+    background-color: #ffffff;
+    opacity: 0.8;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px 50px;
+    img{
+        height: 80px;
+    }
+    .header-right{
+        display: flex;
+        flex-direction: row;
+        a{
+            padding: 50px 10px 0 10px;
+            color: #090909;
+        }
+    }
+}
+
+.top-wrapper{
+    background-image: url(../photo/work_bg.png);
+    height: 100vh;
+    .right-p{
+        width: 50%;
+        float: right;
+        padding: 100px 0;
+        .size{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        .while{
+            padding-bottom: 10px;
+        }
+        p{
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}
+
+.main-wrapper{
+    padding-top: 100px;
+    >div:nth-of-type(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        img:nth-of-type(1){
+            width:80px;
+            height: 150px;
+        }
+    }
+    img:nth-of-type(1){
+        width: 100%;
+    }
+    img:nth-of-type(2){
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.recruit{
+    background-image: url(../photo/recruite_bg.png);
+    padding: 100px 0;
+    height: 100vh;
+    p{
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .title{
+        font-size: 35px;
+        padding: 30px 0;
+    }
+    .sub_title{
+        background-color: #363234;
+        opacity:0.7;
+        border-radius: 10px;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .first-block{
+        display: flex;
+        justify-content: center;
+        div{
+            background-color: #363234;
+            opacity:0.7;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        div:nth-of-type(2){
+            margin-left: 20px;
+        }
+    }
+    .second-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        background-color: #363234;
+        opacity:0.7;
+        width: 620px;
+        height: 130px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+}
+
+.company{
+    padding: 210px 0 ;
+    height: 100vh;
+    >p{
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+    >div:nth-of-type(1){
+        justify-content: center;
+    }
+    img{
+        height: 150px;
+    }
+    .company1{
+        display: flex;
+        flex-direction: column;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            p{
+                padding: 20px 20px;
+            }
+            >p:nth-of-type(1){
+                text-align: center;
+                width: 200px;
+                height: 50px;
+            }
+            >p:nth-of-type(2){
+                width: 580px;
+                height: 50px;
+            }
+        }
+    }
+
+    .contact{
+        >div:nth-of-type(1){
+            display: flex;
+            justify-content: center;
+            p{
+                font-size: 30px;
+                line-height: 120px;
+            }
+            img{
+                height: 120px;
+            }
+        }
+        .contact-block{
+            >div{
+                display: flex;
+                justify-content: center;
+                text-align: left;
+                padding: 5px 0;
+            }
+            p{
+                width: 200px;
+            }
+            input{
+                width: 500px;
+                height: 30px;
+            }
+            textarea{
+                width: 500px;
+                height: 150px;
+                resize: none;
+            }
+            .contact1{
+                line-height: 150px;
+
+            }
+        }
+        .check{
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+    }
