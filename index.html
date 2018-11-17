@@ -33,7 +33,7 @@
             </div>
         </header>
 
-        <div class="top-wrapper">
+        <div id="top-wrapper">
             <div class="right-p" id="business">
                 <p class="size">荷揚げ（揚重）と言ってもどんな仕事？</p>
                 <p>簡単に言うと</p>
@@ -63,7 +63,7 @@
             <img src="photo/map.png">
         </div>
 
-        <div class="recruit" id="recruit">
+        <div id="recruit">
             <p class="title">人材募集中</p>
             <p class="sub_title">★現場スタッフ募集★</p>
             <div class="first-block">
@@ -148,32 +148,34 @@
                 <p>お問い合わせ</p>
                 <img id="pict3" src="photo/picture3.png">
             </div>
-            <div class="contact-block">
+            <form class="contact-block" action="index.html" method="post">
                 <div>
                     <p>お名前</p>
-                    <input type="text" name="name">
+                    <input class="text-form1" type="text" name="name">
                 </div>
                 <div>
                     <p>フリガナ</p>
-                    <input type="text" name="kana">
+                    <input class="text-form2" type="text" name="kana">
                 </div>
                 <div>
                     <p>住所</p>
-                    <input type="text" name="adress">
+                    <input class="text-form3" type="text" name="adress">
                 </div>
                 <div>
                     <p>電話番号</p>
-                    <input type="text" name="tel">
+                    <input class="text-form4" type="text" name="tel">
                 </div>
                 <div>
                     <p>メースアドレス</p>
-                    <input type="text" name="mail">
+                    <input class="text-form5" type="text" name="mail">
                 </div>
                 <div>
                     <p class="contact1">お問い合わせ</p>
-                    <textarea name="contact"></textarea>
+                    <textarea class="text-form6" name="contact"></textarea>
                 </div>
-            <img class="check" src="photo/send_off.png" alt="">
+            </form>
+                <p class="error-message"></p>
+                <img class="check" src="photo/send_off.png" alt="">
         </div>
 
 

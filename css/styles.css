@@ -2,6 +2,8 @@
   background-image: url(../photo/main1.jpg);
   height: 100vh;
   position: relative;
+  background-position: center center;
+  background-size: 2000px;
 }
 .first-photo p {
   z-index: 10;
@@ -16,12 +18,16 @@
   margin: auto;
   text-align: center;
   font-weight: bold;
+  display: none;
 }
 
 .second-photo {
   background-image: url(../photo/main2.jpg);
   height: 100vh;
   position: relative;
+  background-position: center center;
+  background-size: 2000px;
+  display: none;
 }
 .second-photo p {
   z-index: 10;
@@ -36,6 +42,7 @@
   margin: auto;
   text-align: center;
   font-weight: bold;
+  display: none;
 }
 
 .title-photo {
@@ -44,6 +51,7 @@
   align-items: center;
 }
 .title-photo img {
+  display: none;
   height: 100vh;
 }
 .title-photo img:nth-of-type(2) {
@@ -53,13 +61,17 @@
 header {
   background-color: #ffffff;
   opacity: 0.8;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: 5px 50px;
+  font-weight: bold;
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
-  padding: 5px 50px;
+  z-index: 1;
+  border-bottom: 1px solid #293332;
+  display: none;
+  display: flex;
+  justify-content: space-between;
 }
 header img {
   height: 80px;
@@ -73,23 +85,25 @@ header .header-right a {
   color: #090909;
 }
 
-.top-wrapper {
+#top-wrapper {
   background-image: url(../photo/work_bg.png);
+  background-position: center center;
+  background-size: 1900px;
   height: 100vh;
 }
-.top-wrapper .right-p {
+#top-wrapper .right-p {
   width: 50%;
   float: right;
   padding: 100px 0;
 }
-.top-wrapper .right-p .size {
+#top-wrapper .right-p .size {
   font-size: 25px;
   padding-bottom: 20px;
 }
-.top-wrapper .right-p .while {
+#top-wrapper .right-p .while {
   padding-bottom: 10px;
 }
-.top-wrapper .right-p p {
+#top-wrapper .right-p p {
   font-weight: bold;
   font-size: 15px;
 }
@@ -119,52 +133,51 @@ header .header-right a {
   margin: 0 auto;
 }
 
-.recruit {
+#recruit {
   background-image: url(../photo/recruite_bg.png);
+  background-position: center center;
   padding: 100px 0;
   height: 100vh;
+  background-size: 1900px;
 }
-.recruit p {
+#recruit p {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
   font-size: 14px;
   line-height: 25px;
 }
-.recruit .title {
+#recruit .title {
   font-size: 35px;
   padding: 30px 0;
 }
-.recruit .sub_title {
-  background-color: #363234;
-  opacity: 0.7;
+#recruit .sub_title {
+  background-color: rgba(54, 50, 52, 0.7);
   border-radius: 10px;
   width: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
   font-size: 15px;
 }
-.recruit .first-block {
+#recruit .first-block {
   display: flex;
   justify-content: center;
 }
-.recruit .first-block div {
-  background-color: #363234;
-  opacity: 0.7;
+#recruit .first-block div {
+  background-color: rgba(54, 50, 52, 0.7);
   width: 300px;
   height: 300px;
   border-radius: 10px;
 }
-.recruit .first-block div:nth-of-type(2) {
+#recruit .first-block div:nth-of-type(2) {
   margin-left: 20px;
 }
-.recruit .second-block {
+#recruit .second-block {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
-  background-color: #363234;
-  opacity: 0.7;
+  background-color: rgba(54, 50, 52, 0.7);
   width: 620px;
   height: 130px;
   border-radius: 10px;
@@ -207,6 +220,9 @@ header .header-right a {
   height: 50px;
 }
 
+.contact {
+  padding-bottom: 100px;
+}
 .contact > div:nth-of-type(1) {
   display: flex;
   justify-content: center;
@@ -218,11 +234,19 @@ header .header-right a {
 .contact > div:nth-of-type(1) img {
   height: 120px;
 }
+.contact > p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
 .contact .contact-block > div {
   display: flex;
   justify-content: center;
   text-align: left;
   padding: 5px 0;
+}
+.contact .contact-block > div:nth-of-type(6) {
+  padding-bottom: 50px;
 }
 .contact .contact-block p {
   width: 200px;
@@ -241,7 +265,8 @@ header .header-right a {
 }
 .contact .check {
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 0;
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
